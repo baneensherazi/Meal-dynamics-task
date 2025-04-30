@@ -345,3 +345,81 @@ tr:last-child td {
 .confirm-btn:hover {
   background-color: #EF4444;
 }
+
+
+/* mobile responsive */
+/* responsive layout for smaller screens */
+@media (max-width: 768px) {
+  /* reduce padding inside main container */
+  .container {
+    padding: 15px;
+  }
+
+  /* stack logo and profile vertically */
+  .top-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* make profile content stack properly */
+  .profile {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* allow text to wrap if needed */
+  .profile-name,
+  .profile-role {
+    display: block;
+    margin-left: 0;
+  }
+
+  /* menu bar becomes scrollable on smaller screens */
+  .menu-items {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* content padding reduced for smaller screens */
+  .content-section {
+    padding: 15px;
+  }
+
+  /* reduce header layout for smaller screens */
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* make search bar take full width */
+  .search-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  /* make table horizontally scrollable */
+  .table-section {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px; /* prevents table from squashing */
+  }
+
+  /* modal width adjusts on smaller screens */
+  .modal {
+    width: 90%;
+  }
+}

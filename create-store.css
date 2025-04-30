@@ -213,3 +213,65 @@ color: #344054;
     background-color: #f1f5f9;
   }
   
+  @media screen and (max-width: 768px) {
+    .request-details-form .form-row,
+    .contact-section .form-row,
+    .team-configuration .form-grid {
+        flex-direction: column;
+    }
+
+    .request-details-form .form-row {
+        gap: 10px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .contact-section .form-row {
+        gap: 10px;
+    }
+
+    .contact-section input,
+    .request-details-form input,
+    .contact-section select,
+    .request-details-form select {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .contact-description,
+    .team-description {
+        font-size: 13px; /* Adjust font size for readability */
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .btn-close,
+    .btn-create {
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .form-grid {
+        grid-template-columns: repeat(1, 1fr); /* Single column for tablets */
+    }
+
+    .request-details-form .form-row {
+        flex-direction: column;
+    }
+
+    .contact-section .form-row {
+        flex-direction: column;
+    }
+
+    .form-actions {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
