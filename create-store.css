@@ -1,5 +1,5 @@
+/* form sections css */
 .form-section{
-    
     padding: 0;
 }
 
@@ -196,7 +196,7 @@ color: #344054;
   }
   
   .btn-create {
-    background-color: #6366f1; /* Tailwind indigo-500 */
+    background-color: #6366f1; 
     color: #ffffff;
     border: none;
     padding: 10px 20px;

@@ -1,285 +1,267 @@
-/* Basic Reset */
+/* basic reset for consistent layout across browsers */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Style */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    max-width: 1200px;
-    padding:30px;
-  }
-  
-  /* Profile Section Styling */
-  .top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-  }
-  
-  .top-section .logo img {
-    width: 100px; 
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .profile .profile-pic {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .profile .profile-name {
-    font-weight: bold;
-  }
-  
-  .profile .profile-role {
-    margin-left: 5px;
-    color: #888;
-  }
-  
-  /* Menu Bar Styling */
-  .menu-bar {
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-items {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .menu-items li a img {
-    width: 20px; /* Set the icon size */
-    height: 20px;
-    margin-right: 8px; /* Space between the icon and text */
-  }
-  
-  
-  .menu-items li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #333;
-    padding: 8px 12px;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
-  }
-  
-  .menu-items li a i {
-    margin-right: 4px;
-    font-size: 12px;
-  }
-  
-  .menu-items li a i:last-child {
-    margin-left: 4px;
-    font-size: 10px;
-  }
-  
-  .menu-items li a:hover {
-    color: #007bff;
-  }
-  
-  .menu-items li a:active {
-    color: #0056b3;
-  }
-  
-  /* Content Section Styling */
-  .company-info {
-    display: flex;
-    align-items: center;  /* Vertically centers the image and text */
-  }
-  .content-section {
-    margin-top: 20px;
-    padding: 30px;
-  }
-  
-  .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .header-section h1 {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .search-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  .search-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .search-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Table Styling */
-  .table-section {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 12px;
-    text-align: left;
-    font-size: 14px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #F8FAFC;
-    color: #333;
-  }
-  
-  .action-button {
-    background-color: transparent;
-    border: none;
-    color: #007bff;
-    cursor: pointer;
-  }
-  
-  .action-button:hover {
-    text-decoration: underline;
-  }
-  
-  tr:last-child td {
-    border-bottom: none;
-  }
-  .action-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .popup-menu {
-    position: absolute;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    flex-direction: column;
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 6px;
-  }
+/* overall body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
 
-  .popup-menu a {
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #333;
-    font-family: sans-serif;
-  }
+/* layout container */
+.container {
+  max-width: 1200px;
+  padding: 30px;
+}
 
-  .popup-menu a:hover {
-    background-color: #f0f0f0;
-  }
+/* top bar with logo and profile */
+.top-section {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
 
-  .action-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
+/* logo image size */
+.top-section .logo img {
+  width: 100px;
+}
 
-  .popup-menu {
-    position: absolute;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    flex-direction: column;
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 6px;
-  }
+/* profile layout and color */
+.profile {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #1E293B;
+}
 
-  .popup-menu a, .popup-menu button {
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #333;
-    font-family: sans-serif;
-    background: none;
-    border: none;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-  }
+/* profile picture style */
+.profile .profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
-  .popup-menu a:hover, .popup-menu button:hover {
-    background-color: #f0f0f0;
-  }
+/* profile name styling */
+.profile .profile-name {
+  font-weight: bold;
+}
 
-  /* Modal Styles */
-  .modal-backdrop {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2000;
-    justify-content: center;
-    align-items: center;
-  }
+/* role text style */
+.profile .profile-role {
+  color: #888;
+}
 
-  .modal {
-    background: white;
-    padding: 20px;
-    /* Modal Backdrop */
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* Modal Styling */
-/* Modal Backdrop */
+/* menu bar background and shadow */
+.menu-bar {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* menu list items */
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* icon size in menu */
+.menu-items li a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* menu link text */
+.menu-items li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+/* icons spacing inside link */
+.menu-items li a i {
+  margin-right: 4px;
+  font-size: 12px;
+}
+
+.menu-items li a i:last-child {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+/* hover and active states for menu links */
+.menu-items li a:hover {
+  color: #007bff;
+}
+
+.menu-items li a:active {
+  color: #0056b3;
+}
+
+/* layout for image and text inside a row */
+.company-info {
+  display: flex;
+  align-items: center;
+}
+
+/* main content wrapper */
+.content-section {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* header layout (e.g. title and buttons) */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* main heading style */
+.header-section h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* search section layout */
+.search-section {
+  display: flex;
+  align-items: center;
+}
+
+/* search input */
+.search-bar {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* search button styling */
+.search-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #6964E1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* wrapper for table and its styles */
+.table-section {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* general table setup */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* table cell spacing */
+th, td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* table header style */
+th {
+  background-color: #F8FAFC;
+  color: #333;
+}
+
+/* action button inside table */
+.action-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  text-decoration: underline;
+}
+
+/* remove last row bottom border */
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* shared action button style */
+.action-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* popup menu container */
+.popup-menu {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* links inside popup menu */
+.popup-menu a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.popup-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* popup links and buttons */
+.popup-menu a, .popup-menu button {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  font-family: sans-serif;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.popup-menu a:hover, .popup-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+/* modal backdrop overlay */
 .modal-backdrop {
   display: none;
   position: fixed;
@@ -288,19 +270,20 @@
   z-index: 2000;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
-/* Modal Styling */
+/* modal box style */
 .modal {
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  width: 450px; /* Adjusted for better width based on the modal content */
+  width: 450px;
   text-align: center;
 }
 
-/* Main Modal Text */
+/* modal main text */
 .modal p {
   font-size: 17px;
   color: #333;
@@ -308,54 +291,57 @@
   line-height: 1.5;
 }
 
-.modal p strong {
-  color: #e74c3c; /* Red color for bold text */
+/* important part of modal text */
+.modal p span {
+  color: #EF4444;
   font-weight: bold;
 }
 
-/* Disclaimer Text */
+/* disclaimer paragraph inside modal */
 .modal .disclaimer {
   font-size: 14px;
-  color: #888;
+  color: #475569;
   margin-bottom: 20px;
-  text-align: left; /* Align disclaimer text left for better presentation */
+  text-align: left;
 }
 
-/* Buttons Layout - Vertical */
+/* buttons layout inside modal */
 .modal-buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Buttons Style */
+/* general button style */
 .modal-buttons button {
   padding: 12px;
   font-size: 15px;
   cursor: pointer;
-  border: none;
-  border-radius: 20px; /* Rounded buttons */
+  border-radius: 10px;
   transition: all 0.3s ease;
   width: 100%;
 }
 
+/* cancel button */
 .cancel-btn {
-  background-color: #f1f1f1;
-  color: #333;
-  border-radius: 20px; /* Make sure the cancel button is rounded */
+  background-color: transparent;
+  border: 1px solid #D0D5DD;
+  color: #344054;
+  border-radius: 20px;
 }
 
 .cancel-btn:hover {
   background-color: #e0e0e0;
 }
 
+/* confirm delete button */
 .confirm-btn {
-  background-color: #e74c3c;
+  background-color: #EF4444;
   color: #fff;
-  border-radius: 20px; /* Rounded confirm button */
+  border: none;
+  border-radius: 20px;
 }
 
 .confirm-btn:hover {
-  background-color: #c0392b;
+  background-color: #EF4444;
 }
-  }
