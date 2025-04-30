@@ -1,0 +1,361 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Style */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding:30px;
+  }
+  
+  /* Profile Section Styling */
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .top-section .logo img {
+    width: 100px; 
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .profile .profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile .profile-name {
+    font-weight: bold;
+  }
+  
+  .profile .profile-role {
+    margin-left: 5px;
+    color: #888;
+  }
+  
+  /* Menu Bar Styling */
+  .menu-bar {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .menu-items li a img {
+    width: 20px; /* Set the icon size */
+    height: 20px;
+    margin-right: 8px; /* Space between the icon and text */
+  }
+  
+  
+  .menu-items li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-items li a i {
+    margin-right: 4px;
+    font-size: 12px;
+  }
+  
+  .menu-items li a i:last-child {
+    margin-left: 4px;
+    font-size: 10px;
+  }
+  
+  .menu-items li a:hover {
+    color: #007bff;
+  }
+  
+  .menu-items li a:active {
+    color: #0056b3;
+  }
+  
+  /* Content Section Styling */
+  .company-info {
+    display: flex;
+    align-items: center;  /* Vertically centers the image and text */
+  }
+  .content-section {
+    margin-top: 20px;
+    padding: 30px;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-section h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .search-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table Styling */
+  .table-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #F8FAFC;
+    color: #333;
+  }
+  
+  .action-button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    text-decoration: underline;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  .action-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-menu {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .popup-menu a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+  }
+
+  .popup-menu a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .action-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-menu {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .popup-menu a, .popup-menu button {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .popup-menu a:hover, .popup-menu button:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Modal Styles */
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background: white;
+    padding: 20px;
+    /* Modal Backdrop */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Styling */
+/* Modal Backdrop */
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Styling */
+.modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 450px; /* Adjusted for better width based on the modal content */
+  text-align: center;
+}
+
+/* Main Modal Text */
+.modal p {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.modal p strong {
+  color: #e74c3c; /* Red color for bold text */
+  font-weight: bold;
+}
+
+/* Disclaimer Text */
+.modal .disclaimer {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+  text-align: left; /* Align disclaimer text left for better presentation */
+}
+
+/* Buttons Layout - Vertical */
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Buttons Style */
+.modal-buttons button {
+  padding: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px; /* Rounded buttons */
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.cancel-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 20px; /* Make sure the cancel button is rounded */
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.confirm-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 20px; /* Rounded confirm button */
+}
+
+.confirm-btn:hover {
+  background-color: #c0392b;
+}
+  }

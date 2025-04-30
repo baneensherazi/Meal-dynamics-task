@@ -1,0 +1,143 @@
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar with Logo, Profile, and Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="create-store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+  <!-- Profile and Logo Section -->
+  <div class="top-section">
+    <div class="logo">
+     <a href="index.html"> <img src="imgs/logo.png" alt="Logo"> </a>
+    </div>
+    <div class="profile">
+      <img src="imgs/profile-pic.png" alt="Profile" class="profile-pic">
+      <span class="profile-name">Susan Smith</span>
+      <span class="profile-role">Company Admin</span>
+    </div>
+  </div>
+
+  <!-- Menu Bar -->
+  <div class="menu-bar">
+    <ul class="menu-items">
+        <li><a href="#"><img src="icons/dashboard.png" alt="Dashboard Icon"> Dashboard <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/companies.svg" alt="Companies Icon"> Companies <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/store.svg" alt="Store Group Icon"> Store Group <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/store.svg" alt="Stores Icon"> Stores <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/user.png" alt="Users Icon"> Users <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/user.png" alt="Vendors Icon"> Vendors <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/repair.png" alt="Repair & Maintenance Icon"> Repair & Maintenance <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/repair.png" alt="Expense Icon"> Expense <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"><img src="icons/accounts.png" alt="Accounts Payable Icon"> Accounts Payable <i class="fas fa-chevron-down"></i></a></li>
+      </ul>
+  </div>
+  <!-- Content Section -->
+  <div class="content-section">
+    <!-- Heading and Search Bar Section -->
+    <div class="header-section">
+      <h1>Create Store</h1>
+     
+    </div>
+
+    <!-- Form Section -->
+    <div class="request-details-form">
+        <h2>Request Details</h2>
+      
+        <div class="form-group">
+          <label for="company">Company <span class="required">*</span></label>
+          <select id="company" name="company" required>
+            <option value="">Select company</option>
+          </select>
+        </div>
+      
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+            <div class="note">This will be used in all communications and displays.</div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="required">*</span></label>
+            <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter address">
+          </div>
+        </div>
+      </div>
+<!-- 
+      form sectio ends here -->
+      
+      <!-- contact section -->
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <p class="contact-description">
+          Provide the name and email address of the primary contact person for the store. 
+          This individual will serve as the main point of communication for inquiries and updates. 
+          Make sure the information is accurate and up-to-date.
+        </p>
+      
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Name <span class="required">*</span></label>
+            <input type="text" id="contact-name" name="contact-name" placeholder="Enter name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email <span class="required">*</span></label>
+            <input type="email" id="contact-email" name="contact-email" placeholder="Enter email address" required>
+          </div>
+        </div>
+      </div>
+
+    <!-- contact sections ends here -->
+      
+    <!-- team-configuration -->
+    <div class="team-configuration">
+        <h2>Team Configuration</h2>
+        <p class="team-description">
+          Assign key roles to ensure smooth store management and workflow.
+        </p>
+      
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="sr-director">Sr. Director Operations</label>
+            <select id="sr-director" name="sr-director">
+              <option value="">Select from dropdown</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="director">Director Operations</label>
+            <select id="director" name="director">
+              <option value="">Select from dropdown</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="supervisor">Supervisor</label>
+            <select id="supervisor" name="supervisor">
+              <option value="">Select from dropdown</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="manager">General Manager</label>
+            <select id="manager" name="manager">
+              <option value="">Select from dropdown</option>
+            </select>
+          </div>
+        </div>
+      </div>
+       <!-- team-configuration ends here  -->
+
+       <!-- buttons -->
+       <div class="form-actions">
+        <button class="btn-close">Close</button>
+        <button class="btn-create">Create Store</button>
+      </div>
+      
+    </body>
+    </html>
